@@ -99,15 +99,16 @@
     <div class="min-h-full">
         <nav class="bg-white" x-data="{ isOpen: false }">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="flex h-28 items-center justify-between">
+                <div class="flex h-20 items-center justify-between">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
-                            <a href="https://flowbite.com/"
-                                class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8"
-                                    alt="Flowbite Logo" />
-                                <span
-                                    class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sharia Prediction</span>
+                            <a href="{{ route('get.beranda') }}"
+                                class="flex items-center space-x-3 rtl:space-x-reverse">
+                                <img src="{{ URL('img/logo.png') }}" class="h-10 w-10 object-contain object-center"
+                                    alt="Sharia Predict Logo" />
+                                <span class="text-xl font-semibold whitespace-nowrap tracking-tight dark:text-white">
+                                    Sharia Prediction
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -170,20 +171,24 @@
         <main class="main-container">
             @yield('content.landing.page')
         </main>
-        <footer class="dark:bg-gray-900 mt-14">
+        <footer class="bg-white dark:bg-gray-900 mt-14">
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <a href="https://flowbite.com/"
+                    <a href="{{ route('get.beranda') }}"
                         class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                        <img src="{{ URL('img/logo.png') }}" class="h-10 w-10 object-contain object-center"
+                            alt="Sharia Predict Logo" />
                         <span
-                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sharia Prediction</span>
+                            class="self-center text-xl font-semibold whitespace-nowrap tracking-tight dark:text-white">
+                            Sharia Prediction
+                        </span>
                     </a>
                 </div>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
-                        href="https://flowbite.com/" class="hover:underline">Sharia Prediction</a>. All Rights
-                    Reserved.</span>
+                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                    © 2024 <a href="{{ route('get.beranda') }}" class="hover:underline">Sharia Prediction</a>. All
+                    Rights Reserved.
+                </span>
             </div>
         </footer>
     </div>

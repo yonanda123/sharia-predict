@@ -29,10 +29,14 @@
                             </path>
                         </svg>
                     </button>
-                    <a href="https://flowbite.com" class="flex ms-2 md:me-24">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                    <a href="{{ route('get.beranda') }}"
+                        class="flex items-center ms-2 md:me-24 space-x-3 rtl:space-x-reverse">
+                        <img src="{{ URL('img/logo.png') }}" class="h-10 w-10 object-contain object-center"
+                            alt="Sharia Predict Logo" />
                         <span
-                            class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Sharia Prediction</span>
+                            class="self-center text-xl font-semibold whitespace-nowrap tracking-tight dark:text-white">
+                            Sharia Prediction
+                        </span>
                     </a>
                 </div>
                 <div class="flex items-center">
